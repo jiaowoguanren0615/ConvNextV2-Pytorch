@@ -4,7 +4,7 @@
 ## Precautions
 The code warehouse mainly contains two models: ConvNextV2 and FCMAE-ConvNextV2. The code has been slightly modified based on the source code of the facebookresearch warehouse. You can use your own data set to train the classification model and FCMAE model.
 
-Note: Before training the classification model, you need to enter the train_gpu_finetune.py file to modify the path and batchsize of your own data set. If it is a single-card environment, you need to replace the "--sync-bn" parameter with false, otherwise it may An error will be reported; if you want to train the FCMAE model, you need to first enter the "util-->__init__" file, modify the import package path, then enter __train_gpu_pretrain.py__, modify the path of the data set, and finally run the __train_gpu_pretrain.py__ file.
+Note: Before training the classification model, you need to enter the train_gpu_finetune.py file to modify the path and batchsize of your own data set. If it is a single-gpu environment, you need to replace the "--sync-bn" parameter with false, otherwise it may An error will be reported; if you want to train the FCMAE model, you need to first enter the "util-->__init__" file, modify the import package path, then enter __train_gpu_pretrain.py__, modify the path of the data set, and finally run the __train_gpu_pretrain.py__ file.
 
 ## TRAIN AND EVALUATE CLF MODEL
 1. cd ConvNextV2
