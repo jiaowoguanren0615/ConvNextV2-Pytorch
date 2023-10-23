@@ -25,7 +25,7 @@ def get_args_parser():
     parser.add_argument('--epochs', default=3, type=int)
 
     # Dataset parameters
-    parser.add_argument('--data_root', default='/usr/local/Huangshuqi/ImageData/flower_data', type=str,
+    parser.add_argument('--data_root', default='./flower_data', type=str,
                         help='dataset path')
     parser.add_argument('--input-size', default=224, type=int)
     parser.add_argument('--batch-size', default=8, type=int) # consume 8G GPU-Memory
